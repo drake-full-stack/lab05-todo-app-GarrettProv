@@ -67,6 +67,11 @@ function App() {
             >
               🗑️
             </button>
+            <span 
+              className={task.completed ? "task-text completed" : "task-text"}
+            >
+              {task.text}
+            </span>
           </li>
 
         ))}
